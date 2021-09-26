@@ -47,6 +47,9 @@ namespace StarterAssets
 		[Tooltip("What layers the character uses as ground")]
 		public LayerMask GroundLayers;
 
+		public bool inAttack;
+		public MeleeWeapon meleeWeapon;
+
 		[Header("Cinemachine")]
 		[Tooltip("The follow target set in the Cinemachine Virtual Camera that the camera will follow")]
 		public GameObject CinemachineCameraTarget;
@@ -58,6 +61,9 @@ namespace StarterAssets
 		public float CameraAngleOverride = 0.0f;
 		[Tooltip("For locking the camera position on all axis")]
 		public bool LockCameraPosition = false;
+
+		[SerializeField]
+		GameObject wingsObject;
 
 		// cinemachine
 		private float _cinemachineTargetYaw;
@@ -81,6 +87,8 @@ namespace StarterAssets
 		private int _animIDJump;
 		private int _animIDFreeFall;
 		private int _animIDMotionSpeed;
+		private int _animIDAttack;
+		private int _animIDStateTime;
 
 		private Animator _animator;
 		private CharacterController _controller;
@@ -116,10 +124,16 @@ namespace StarterAssets
 		private void Update()
 		{
 			_hasAnimator = TryGetComponent(out _animator);
-			
-			JumpAndGravity();
+			_animator.SetFloat(_animIDStateTime, Mathf.Repeat(_animator.GetCurrentAnimatorStateInfo(0).normalizedTime, 1f));
+
 			GroundedCheck();
-			Move();
+			AimAttack();
+
+			if (!inAttack)
+            {
+				JumpAndGravity();
+				Move();
+			}
 		}
 
 		private void LateUpdate()
@@ -134,6 +148,8 @@ namespace StarterAssets
 			_animIDJump = Animator.StringToHash("Jump");
 			_animIDFreeFall = Animator.StringToHash("FreeFall");
 			_animIDMotionSpeed = Animator.StringToHash("MotionSpeed");
+			_animIDStateTime = Animator.StringToHash("StateTime");
+			_animIDAttack = Animator.StringToHash("MeleeAttack");
 		}
 
 		private void GroundedCheck()
@@ -234,6 +250,8 @@ namespace StarterAssets
 				// reset the fall timeout timer
 				_fallTimeoutDelta = FallTimeout;
 
+				wingsObject.SetActive(false);
+
 				// update animator if using character
 				if (_hasAnimator)
 				{
@@ -283,18 +301,42 @@ namespace StarterAssets
 					{
 						_animator.SetBool(_animIDFreeFall, true);
 					}
+					if (_input.jump)
+					{
+						wingsObject.SetActive(true);
+					}
 				}
 
+				
 				// if we are not grounded, do not jump
 				_input.jump = false;
+
+
 			}
 
 			// apply gravity over time if under terminal (multiply by delta time twice to linearly speed up over time)
 			if (_verticalVelocity < _terminalVelocity)
 			{
-				_verticalVelocity += Gravity * Time.deltaTime;
+				if (wingsObject.activeInHierarchy)
+                {
+					_verticalVelocity = -1f;
+                }
+				else
+                {
+					_verticalVelocity += Gravity * Time.deltaTime;
+				}
 			}
 		}
+
+		private void AimAttack()
+        {
+			if (_input.attack)
+            {
+				_animator.SetTrigger(_animIDAttack);
+				_input.attack = false;
+				inAttack = true;
+			}
+        }
 
 		private static float ClampAngle(float lfAngle, float lfMin, float lfMax)
 		{
