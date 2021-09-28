@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
 #endif
@@ -24,6 +25,11 @@ namespace StarterAssets
 		public float RotationSmoothTime = 0.12f;
 		[Tooltip("Acceleration and deceleration")]
 		public float SpeedChangeRate = 10.0f;
+
+		[SerializeField]
+		LayerMask whatIsInteractable;
+		public float interactableSphereSize = 2f;
+		
 
 		[Space(10)]
 		[Tooltip("The height the player can jump")]
@@ -128,15 +134,20 @@ namespace StarterAssets
 
 			GroundedCheck();
 			AimAttack();
+			ActivateObject();
 
 			if (!inAttack)
             {
+				
 				JumpAndGravity();
 				Move();
+				
 			}
 		}
 
-		private void LateUpdate()
+        
+
+        private void LateUpdate()
 		{
 			CameraRotation();
 		}
@@ -303,7 +314,7 @@ namespace StarterAssets
 					}
 					if (_input.jump)
 					{
-						wingsObject.SetActive(true);
+						wingsObject.SetActive(!wingsObject.activeSelf);
 					}
 				}
 
@@ -337,6 +348,21 @@ namespace StarterAssets
 				inAttack = true;
 			}
         }
+
+		private void ActivateObject()
+		{
+			if (_input.activate)
+            {
+				_input.activate = false;
+				Vector3 sphereCenter = new Vector3(transform.position.x, transform.position.y + 0.9f, transform.position.z);
+				Collider[] collider = Physics.OverlapSphere(sphereCenter, interactableSphereSize, whatIsInteractable);
+				
+				Debug.Log(collider.Length);
+				if (collider.Length > 0)
+					collider[0].transform.GetComponent<IInteractable>().Interact();
+
+			}
+		}
 
 		private static float ClampAngle(float lfAngle, float lfMin, float lfMax)
 		{

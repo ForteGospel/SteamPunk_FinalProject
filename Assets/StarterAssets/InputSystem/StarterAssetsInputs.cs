@@ -13,6 +13,7 @@ namespace StarterAssets
 		public bool jump;
 		public bool sprint;
 		public bool attack;
+		public bool activate;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -51,6 +52,11 @@ namespace StarterAssets
 		{
 			AttackInput(value.isPressed);
 		}
+
+		public void OnActivate(InputValue value)
+		{
+			ActivateInput(value.isPressed);
+		}
 #else
 	// old input sys if we do decide to have it (most likely wont)...
 #endif
@@ -80,6 +86,11 @@ namespace StarterAssets
         {
 			attack = newAttackState;
         }
+
+		public void ActivateInput(bool newActivateState)
+		{
+			activate = newActivateState;
+		}
 
 #if !UNITY_IOS || !UNITY_ANDROID
 
