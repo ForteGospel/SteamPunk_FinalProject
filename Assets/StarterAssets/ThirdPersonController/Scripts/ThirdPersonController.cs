@@ -27,6 +27,12 @@ namespace StarterAssets
 		public float SpeedChangeRate = 10.0f;
 
 		[SerializeField]
+		floatScriptableObject playerHealth, playerSteam;
+
+		[SerializeField]
+		float steamRechargeSpeed = 10f;
+
+		[SerializeField]
 		LayerMask whatIsInteractable;
 		public float interactableSphereSize = 2f;
 		
@@ -125,12 +131,29 @@ namespace StarterAssets
 			// reset our timeouts on start
 			_jumpTimeoutDelta = JumpTimeout;
 			_fallTimeoutDelta = FallTimeout;
+
+			playerHealth.value = 100f;
+			playerSteam.value = 50f;
 		}
 
 		private void Update()
 		{
 			_hasAnimator = TryGetComponent(out _animator);
 			_animator.SetFloat(_animIDStateTime, Mathf.Repeat(_animator.GetCurrentAnimatorStateInfo(0).normalizedTime, 1f));
+
+			if (wingsObject.activeInHierarchy)
+            {
+				if (playerSteam.value >= 0f)
+					playerSteam.value -= (steamRechargeSpeed / 2) * Time.deltaTime;
+				else
+					wingsObject.SetActive(false);
+
+			}
+			else
+            {
+				if (playerSteam.value <= 100f)
+					playerSteam.value += steamRechargeSpeed * Time.deltaTime;
+			}
 
 			GroundedCheck();
 			if(!PauseGameController.instance.isGamePaused)
@@ -343,11 +366,12 @@ namespace StarterAssets
 
 		private void AimAttack()
         {
-			if (_input.attack)
+			if (_input.attack && playerSteam.value > 15f && Grounded)
             {
 				_animator.SetTrigger(_animIDAttack);
 				_input.attack = false;
 				inAttack = true;
+				playerSteam.value -= 15f;
 			}
         }
 

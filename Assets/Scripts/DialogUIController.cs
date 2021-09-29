@@ -23,6 +23,10 @@ public class DialogUIController : MonoBehaviour
     private void Awake()
     {
         instance = this;
+    }
+
+    private void Start()
+    {
         hideUI();
     }
 

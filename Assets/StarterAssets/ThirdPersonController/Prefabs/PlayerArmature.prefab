@@ -6107,6 +6107,9 @@ MonoBehaviour:
   SprintSpeed: 5.335
   RotationSmoothTime: 0.12
   SpeedChangeRate: 10
+  playerHealth: {fileID: 11400000, guid: 09618750b082d7d4186fa320112e8bff, type: 2}
+  playerSteam: {fileID: 11400000, guid: c1f8273fb56509c4799e2644c8d1a0ce, type: 2}
+  steamRechargeSpeed: 10
   whatIsInteractable:
     serializedVersion: 2
     m_Bits: 1024
@@ -12948,17 +12951,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: bc2e0bd3de7d1f142945a01e566963ed,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.226
+      value: -0.211
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bc2e0bd3de7d1f142945a01e566963ed,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.195
+      value: -0.178
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bc2e0bd3de7d1f142945a01e566963ed,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.417
+      value: 0.429
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bc2e0bd3de7d1f142945a01e566963ed,
         type: 3}
@@ -13749,6 +13752,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3826292926425337403}
     m_Modifications:
+    - target: {fileID: -8821100909430596386, guid: 8662b9a0caaa506439b3ba9051e8dcc8,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.37496945
+      objectReference: {fileID: 0}
+    - target: {fileID: -8821100909430596386, guid: 8662b9a0caaa506439b3ba9051e8dcc8,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.07412756
+      objectReference: {fileID: 0}
+    - target: {fileID: -8821100909430596386, guid: 8662b9a0caaa506439b3ba9051e8dcc8,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.37496945
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8662b9a0caaa506439b3ba9051e8dcc8,
         type: 3}
       propertyPath: m_RootOrder
@@ -13843,6 +13861,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: model
+      objectReference: {fileID: 0}
+    - target: {fileID: 5185082436029143141, guid: 8662b9a0caaa506439b3ba9051e8dcc8,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3765991
+      objectReference: {fileID: 0}
+    - target: {fileID: 5185082436029143141, guid: 8662b9a0caaa506439b3ba9051e8dcc8,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.074449725
+      objectReference: {fileID: 0}
+    - target: {fileID: 5185082436029143141, guid: 8662b9a0caaa506439b3ba9051e8dcc8,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3765991
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8662b9a0caaa506439b3ba9051e8dcc8, type: 3}
