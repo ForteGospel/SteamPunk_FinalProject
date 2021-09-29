@@ -28,7 +28,7 @@ public class movingPlatform : MonoBehaviour, IActivable
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (isActive)
             moveTowardsDestination();
@@ -57,18 +57,6 @@ public class movingPlatform : MonoBehaviour, IActivable
     public void Activate()
     {
         isActive = !isActive;
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Player")
-            collision.transform.SetParent(transform);
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.tag == "Player")
-            collision.transform.SetParent(null);
     }
 
     private void OnTriggerEnter(Collider other)

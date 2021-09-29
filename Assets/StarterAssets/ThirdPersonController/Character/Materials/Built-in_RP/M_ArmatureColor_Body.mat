@@ -77,8 +77,8 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Layer1Glossiness: 0.941
-    - _Layer1Metallic: 1
+    - _Layer1Glossiness: 0.5
+    - _Layer1Metallic: 0.1
     - _Layer2Glossiness: 1
     - _Layer2Metallic: 1
     - _Metallic: 0
@@ -96,4 +96,3 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Layer1Color: {r: 0.74105555, g: 0.8105298, b: 0.8584906, a: 1}
     - _Layer2Color: {r: 0.9622642, g: 0.72418696, b: 0.43120328, a: 1}
-  m_BuildTextureStacks: []

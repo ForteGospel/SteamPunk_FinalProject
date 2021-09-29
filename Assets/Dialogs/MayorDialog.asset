@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad3fc814fb419544092b8dd27984deb9, type: 3}
+  m_Name: MayorDialog
+  m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: a62c26148d6a46d4a842fa9e70e05468, type: 3}
+  dialog:
+  - huh, so is that the machine you spoke of, Toymaker?
+  - I must admit it look... Impressive, your best creation yet indeed
+  - we all, well, most, I mean Some of us belive in you, no offance of coaurse, its
+    just with your age and day, we have our doubts, but you are our best chance of
+    claiming the Isle treasures.
+  - "I only hope it is enough to take on the dangers of Isles that the Nomads spoke
+    of, \u2018a single lightning from a tower struck the ship down\u2019, can\u2019t
+    imagine what other suprises are hidden there."

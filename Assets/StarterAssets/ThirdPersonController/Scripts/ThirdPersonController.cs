@@ -133,15 +133,17 @@ namespace StarterAssets
 			_animator.SetFloat(_animIDStateTime, Mathf.Repeat(_animator.GetCurrentAnimatorStateInfo(0).normalizedTime, 1f));
 
 			GroundedCheck();
-			AimAttack();
-			ActivateObject();
-
-			if (!inAttack)
+			if(!PauseGameController.instance.isGamePaused)
             {
-				
-				JumpAndGravity();
-				Move();
-				
+				AimAttack();
+				ActivateObject();
+
+				if (!inAttack)
+				{
+
+					JumpAndGravity();
+					Move();
+				}
 			}
 		}
 
