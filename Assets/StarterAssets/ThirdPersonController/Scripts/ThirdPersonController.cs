@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
@@ -59,8 +60,17 @@ namespace StarterAssets
 		[Tooltip("What layers the character uses as ground")]
 		public LayerMask GroundLayers;
 
+		[Header("Attack Variables")]
 		public bool inAttack;
 		public MeleeWeapon meleeWeapon;
+
+		[Header("Damage Variables")]
+		public float staggerTime = 1f;
+		public float invinsibilityTime = 2f;
+		public SkinnedMeshRenderer playerRenderer;
+		public Color damageColor;
+		private Color regularColor;
+		private bool canGetHit = true;
 
 		[Header("Cinemachine")]
 		[Tooltip("The follow target set in the Cinemachine Virtual Camera that the camera will follow")]
@@ -74,8 +84,8 @@ namespace StarterAssets
 		[Tooltip("For locking the camera position on all axis")]
 		public bool LockCameraPosition = false;
 
-		[SerializeField]
-		GameObject wingsObject;
+		public GameObject wingsObject;
+		public bool inSteam = false;
 
 		// cinemachine
 		private float _cinemachineTargetYaw;
@@ -134,6 +144,8 @@ namespace StarterAssets
 
 			playerHealth.value = 100f;
 			playerSteam.value = 50f;
+
+			regularColor = playerRenderer.material.color;
 		}
 
 		private void Update()
@@ -355,7 +367,10 @@ namespace StarterAssets
 			{
 				if (wingsObject.activeInHierarchy)
                 {
-					_verticalVelocity = -1f;
+					if (inSteam)
+						_verticalVelocity = 2f;
+					else
+						_verticalVelocity = -1f;
                 }
 				else
                 {
@@ -389,6 +404,38 @@ namespace StarterAssets
 
 			}
 		}
+
+		public void getHit(float damage)
+        {
+			if (canGetHit)
+            {
+				playerHealth.value -= damage;
+
+				if (playerHealth.value < 0f)
+				{
+					//isdead
+				}
+				else
+				{
+					StartCoroutine("staggerPlayer");
+				}
+			}
+        }
+
+		private IEnumerator staggerPlayer()
+        {
+			canGetHit = false;
+			float i = 0;
+			while (i < invinsibilityTime)
+            {
+				playerRenderer.material.color = damageColor;
+				yield return new WaitForSeconds(0.1f);
+				playerRenderer.material.color = regularColor;
+				yield return new WaitForSeconds(0.1f);
+				i += 0.4f;
+            }
+			canGetHit = true;
+        }
 
 		private static float ClampAngle(float lfAngle, float lfMin, float lfMax)
 		{
