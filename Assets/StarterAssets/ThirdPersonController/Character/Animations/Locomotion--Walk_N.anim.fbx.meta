@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 8269a9f8cf495034c817722ac21f309f
 ModelImporter:
-  serializedVersion: 20200
+  serializedVersion: 19301
   internalIDToNameTable:
   - first:
       74: 1657602633327794031
@@ -81,7 +81,6 @@ ModelImporter:
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
-    bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4
@@ -91,9 +90,6 @@ ModelImporter:
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
-    secondaryUVMarginMethod: 1
-    secondaryUVMinLightmapResolution: 40
-    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
@@ -104,7 +100,11 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
+  referencedClips:
+  - 96916bae750f63a4b9fd3e23e6f1641a
+  - 2392b70e085423b4c8e1970056df0205
+  - 29b47cd89d9f2c34ab7a9e5c9e52c776
+  - 2b37a19f8b5f6a04db6015b1f7cb6dd3
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
@@ -912,7 +912,6 @@ ModelImporter:
   animationType: 3
   humanoidOversampling: 1
   avatarSetup: 2
-  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
