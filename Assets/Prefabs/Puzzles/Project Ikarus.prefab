@@ -1,0 +1,1232 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &43679025860025819
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5871190920640160937}
+  - component: {fileID: 6526441099807142185}
+  m_Layer: 0
+  m_Name: Project Ikarus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5871190920640160937
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43679025860025819}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4809642029764349653}
+  - {fileID: 1413286390999007079}
+  - {fileID: 8333929044448763259}
+  - {fileID: 3511492592276618669}
+  - {fileID: 2304316277968909377}
+  - {fileID: 1891904161435662541}
+  - {fileID: 3939854077286105074}
+  - {fileID: 8648794108901042884}
+  - {fileID: 3885459598957764281}
+  - {fileID: 4772086764471116059}
+  - {fileID: 4985807815424486385}
+  - {fileID: 2208434695029657315}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6526441099807142185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43679025860025819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f919bdfd3f6403e4db8a257187a25de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secretCode: 02000000030000000400000009000000
+  correctColor: {r: 0, g: 1, b: 0, a: 0}
+  errorColor: {r: 1, g: 0, b: 0, a: 0}
+--- !u!1001 &606089094145285806
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5871190920640160937}
+    m_Modifications:
+    - target: {fileID: 2924772391247460965, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_Name
+      value: Gravestone (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: dialog
+      value: 
+      objectReference: {fileID: 11400000, guid: 84486b02c78a0914a8e1b3f546d3f4a0,
+        type: 2}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6526441099807142185}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: newNumberEntered
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5301a87827d622349b30ff35a8dd1b3e, type: 3}
+--- !u!4 &4809642029764349653 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 606089094145285806}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &643977915750740320
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5871190920640160937}
+    m_Modifications:
+    - target: {fileID: 2924772391247460965, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_Name
+      value: Gravestone (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: dialog
+      value: 
+      objectReference: {fileID: 11400000, guid: f7ab7afa1472fe8459984227529675e6,
+        type: 2}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6526441099807142185}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: newNumberEntered
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5301a87827d622349b30ff35a8dd1b3e, type: 3}
+--- !u!4 &4772086764471116059 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 643977915750740320}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1145920822311795594
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5871190920640160937}
+    m_Modifications:
+    - target: {fileID: 2924772391247460965, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_Name
+      value: Gravestone (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: dialog
+      value: 
+      objectReference: {fileID: 11400000, guid: 9cc05fcdf76220844b14a1b39f3729b5,
+        type: 2}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6526441099807142185}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: newNumberEntered
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5301a87827d622349b30ff35a8dd1b3e, type: 3}
+--- !u!4 &4985807815424486385 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1145920822311795594}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3661625832300460735
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5871190920640160937}
+    m_Modifications:
+    - target: {fileID: 2924772391247460965, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_Name
+      value: Gravestone (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: dialog
+      value: 
+      objectReference: {fileID: 11400000, guid: f4cd3f641a5d5a247a10bdde03617002,
+        type: 2}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6526441099807142185}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: newNumberEntered
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5301a87827d622349b30ff35a8dd1b3e, type: 3}
+--- !u!4 &8648794108901042884 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 3661625832300460735}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4142772277933362432
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5871190920640160937}
+    m_Modifications:
+    - target: {fileID: 2924772391247460965, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_Name
+      value: Gravestone (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: dialog
+      value: 
+      objectReference: {fileID: 11400000, guid: e8be97d40dd94a744aa7f4526c8dea67,
+        type: 2}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneNumber
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6526441099807142185}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: newNumberEntered
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5301a87827d622349b30ff35a8dd1b3e, type: 3}
+--- !u!4 &8333929044448763259 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 4142772277933362432}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5807217927087499446
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5871190920640160937}
+    m_Modifications:
+    - target: {fileID: 2924772391247460965, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_Name
+      value: Gravestone (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: dialog
+      value: 
+      objectReference: {fileID: 11400000, guid: 584606f9e83e0b6448952b966ce707c3,
+        type: 2}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6526441099807142185}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: newNumberEntered
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5301a87827d622349b30ff35a8dd1b3e, type: 3}
+--- !u!4 &1891904161435662541 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 5807217927087499446}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6085465391021432472
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5871190920640160937}
+    m_Modifications:
+    - target: {fileID: 2924772391247460965, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_Name
+      value: Gravestone (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: dialog
+      value: 
+      objectReference: {fileID: 11400000, guid: 3fca503dee250ec4684b4a11928ba71b,
+        type: 2}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6526441099807142185}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: newNumberEntered
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5301a87827d622349b30ff35a8dd1b3e, type: 3}
+--- !u!4 &2208434695029657315 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 6085465391021432472}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6137445672210441274
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5871190920640160937}
+    m_Modifications:
+    - target: {fileID: 2924772391247460965, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_Name
+      value: Gravestone (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: dialog
+      value: 
+      objectReference: {fileID: 11400000, guid: f77f9eab14da20443928d4aa4be54608,
+        type: 2}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6526441099807142185}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: newNumberEntered
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5301a87827d622349b30ff35a8dd1b3e, type: 3}
+--- !u!4 &2304316277968909377 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 6137445672210441274}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6434242387392048924
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5871190920640160937}
+    m_Modifications:
+    - target: {fileID: 2924772391247460965, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_Name
+      value: Gravestone (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: dialog
+      value: 
+      objectReference: {fileID: 11400000, guid: 7348c5bd35794e94abe35100e52dc086,
+        type: 2}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6526441099807142185}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: newNumberEntered
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5301a87827d622349b30ff35a8dd1b3e, type: 3}
+--- !u!4 &1413286390999007079 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 6434242387392048924}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8821802662555037142
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5871190920640160937}
+    m_Modifications:
+    - target: {fileID: 2924772391247460965, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_Name
+      value: Gravestone (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: dialog
+      value: 
+      objectReference: {fileID: 11400000, guid: 93d6ade7a9103b5498369a8886050115,
+        type: 2}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneNumber
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6526441099807142185}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: newNumberEntered
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5301a87827d622349b30ff35a8dd1b3e, type: 3}
+--- !u!4 &3511492592276618669 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 8821802662555037142}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8969808475704209289
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5871190920640160937}
+    m_Modifications:
+    - target: {fileID: 2924772391247460965, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_Name
+      value: Gravestone (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: dialog
+      value: 
+      objectReference: {fileID: 11400000, guid: 3801511dffe43ed48971c495f71c63d3,
+        type: 2}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6526441099807142185}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: newNumberEntered
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5301a87827d622349b30ff35a8dd1b3e, type: 3}
+--- !u!4 &3939854077286105074 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 8969808475704209289}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9168741475543043778
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5871190920640160937}
+    m_Modifications:
+    - target: {fileID: 2924772391247460965, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_Name
+      value: Gravestone (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: dialog
+      value: 
+      objectReference: {fileID: 11400000, guid: 4c9c7966471f49542909b24aae4e3979,
+        type: 2}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneNumber
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6526441099807142185}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: newNumberEntered
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754490996326279407, guid: 5301a87827d622349b30ff35a8dd1b3e,
+        type: 3}
+      propertyPath: graveStoneEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5301a87827d622349b30ff35a8dd1b3e, type: 3}
+--- !u!4 &3885459598957764281 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5392503240667435131, guid: 5301a87827d622349b30ff35a8dd1b3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 9168741475543043778}
+  m_PrefabAsset: {fileID: 0}

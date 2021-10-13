@@ -16,7 +16,12 @@ public class DialogUIController : MonoBehaviour
     [SerializeField]
     Image image;
 
+    [SerializeField]
+    GameObject panel;
+
     DialogObjects currentDialog;
+
+    float secondsForTempUI = 0;
 
     int currentTextLineNumber = 0;
 
@@ -30,17 +35,35 @@ public class DialogUIController : MonoBehaviour
         hideUI();
     }
 
+    private void Update()
+    {
+        checkForTempUI();
+    }
+
 
     public void showDialog (DialogObjects dialog)
     {
+        currentTextLineNumber = 0;
         showUI();
         currentDialog = dialog;
         updateDialog();
     }
 
+    public void showTempDialog(DialogObjects dialog)
+    {
+        currentTextLineNumber = 0;
+        currentDialog = dialog;
+        updateDialog();
+        secondsForTempUI = 2f;       
+    }
+
     public void updateDialog()
     {
-        if (!(currentTextLineNumber == currentDialog.dialog.Length))
+        if (currentTextLineNumber == currentDialog.dialog.Length)
+        {
+            hideUI();
+        }
+        else
         {
             if (currentTextLineNumber >= currentDialog.dialog.Length - 1)
                 buttonText.text = "Finish";
@@ -52,24 +75,31 @@ public class DialogUIController : MonoBehaviour
 
             currentTextLineNumber++;
         }
-        else
-        {
-            currentTextLineNumber = 0;
-            hideUI();
-        }
 
     }
 
     private void showUI()
     {
-        gameObject.SetActive(true);
+        panel.SetActive(true);
+        secondsForTempUI = 0.1f;
         PauseGameController.instance.pauseGame();
         
     }
 
+    private void checkForTempUI()
+    {
+        if (secondsForTempUI > 0f)
+        {
+            panel.SetActive(true);
+            secondsForTempUI -= Time.deltaTime;
+        }
+        else
+            panel.SetActive(false);
+    }
+
     private void hideUI()
     {
-        gameObject.SetActive(false);
+        panel.SetActive(false);
         PauseGameController.instance.unPauseGame();
     }
 }
