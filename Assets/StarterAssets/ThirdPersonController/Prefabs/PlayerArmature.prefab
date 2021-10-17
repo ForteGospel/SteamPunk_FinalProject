@@ -5594,6 +5594,8 @@ MonoBehaviour:
   - {fileID: 1885122339288888930}
   - {fileID: 1806461767516816685}
   ParticleSystem: {fileID: 6066323856498084572}
+  center: {x: 0, y: 1, z: 1.5}
+  size: {x: 2, y: 3, z: 3}
 --- !u!114 &1808131101763413070
 MonoBehaviour:
   m_ObjectHideFlags: 0

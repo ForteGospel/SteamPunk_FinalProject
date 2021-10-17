@@ -15,6 +15,8 @@ public class EllenStaffEffect : StateMachineBehaviour
         ctrl.meleeWeapon.effects[effectIndex].Activate();
 
         ctrl.meleeWeapon.ParticleSystem.SetActive(true);
+
+        //int contacts = Physics.OverlapBoxNonAlloc(tra)
     }
 
 }

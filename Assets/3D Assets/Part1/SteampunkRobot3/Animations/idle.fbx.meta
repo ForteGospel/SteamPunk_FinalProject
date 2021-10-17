@@ -1,0 +1,436 @@
+fileFormatVersion: 2
+guid: e50ecdc7ce591cb4d8b277d57ad7f115
+timeCreated: 1533280605
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Arm1_L
+    100002: Arm1_R
+    100004: Arm2_L
+    100006: Arm2_R
+    100008: Chest
+    100010: Cill1_L
+    100012: Cill1_L_end
+    100014: Cill1_R
+    100016: Cill1_R_end
+    100018: Cill2_L
+    100020: Cill2_L_end
+    100022: Cill2_R
+    100024: Cill2_R_end
+    100026: Cill3_L
+    100028: Cill3_L_end
+    100030: Cill3_R
+    100032: Cill3_R_end
+    100034: Cill4_L
+    100036: Cill4_L_end
+    100038: Cill4_R
+    100040: Cill4_R_end
+    100042: Flywheel
+    100044: Flywheel_end
+    100046: Foot_L
+    100048: Foot_R
+    100050: Gauge1
+    100052: Gauge1_end
+    100054: Gauge2_L
+    100056: Gauge2_L_end
+    100058: Gauge2_R
+    100060: Gauge2_R_end
+    100062: H_Hinge_L
+    100064: H_Hinge_R
+    100066: Hammer_L
+    100068: Hammer_L_end
+    100070: Hammer_R
+    100072: Hammer_R_end
+    100074: Hips
+    100076: //RootNode
+    100078: LegRoot_L
+    100080: LegRoot_R
+    100082: LegTarget_L
+    100084: LegTarget_L_end
+    100086: LegTarget_R
+    100088: LegTarget_R_end
+    100090: Piston1_L
+    100092: Piston1_L_end
+    100094: Piston1_R
+    100096: Piston1_R_end
+    100098: Piston1Target_L
+    100100: Piston1Target_L_end
+    100102: Piston1Target_R
+    100104: Piston1Target_R_end
+    100106: Piston2_L
+    100108: Piston2_L_end
+    100110: Piston2_R
+    100112: Piston2_R_end
+    100114: Piston2Target_L
+    100116: Piston2Target_L_end
+    100118: Piston2Target_R
+    100120: Piston2Target_R_end
+    100122: Piston3_L
+    100124: Piston3_L_end
+    100126: Piston3_R
+    100128: Piston3_R_end
+    100130: Piston3Target_L
+    100132: Piston3Target_L_end
+    100134: Piston3Target_R
+    100136: Piston3Target_R_end
+    100138: Piston4_L
+    100140: Piston4_L_end
+    100142: Piston4_R
+    100144: Piston4_R_end
+    100146: Piston4Target_L
+    100148: Piston4Target_L_end
+    100150: Piston4Target_R
+    100152: Piston4Target_R_end
+    100154: Shin_L
+    100156: Shin_R
+    100158: Thigh_L
+    100160: Thigh_R
+    100162: V_Hinge_L
+    100164: V_Hinge_L_end
+    100166: V_Hinge_R
+    100168: V_Hinge_R_end
+    100170: Valve1
+    100172: Valve1_end
+    100174: Valve2_L
+    100176: Valve2_L_end
+    100178: Valve2_R
+    100180: Valve2_R_end
+    100182: SteampunkRobot3_rig
+    400000: Arm1_L
+    400002: Arm1_R
+    400004: Arm2_L
+    400006: Arm2_R
+    400008: Chest
+    400010: Cill1_L
+    400012: Cill1_L_end
+    400014: Cill1_R
+    400016: Cill1_R_end
+    400018: Cill2_L
+    400020: Cill2_L_end
+    400022: Cill2_R
+    400024: Cill2_R_end
+    400026: Cill3_L
+    400028: Cill3_L_end
+    400030: Cill3_R
+    400032: Cill3_R_end
+    400034: Cill4_L
+    400036: Cill4_L_end
+    400038: Cill4_R
+    400040: Cill4_R_end
+    400042: Flywheel
+    400044: Flywheel_end
+    400046: Foot_L
+    400048: Foot_R
+    400050: Gauge1
+    400052: Gauge1_end
+    400054: Gauge2_L
+    400056: Gauge2_L_end
+    400058: Gauge2_R
+    400060: Gauge2_R_end
+    400062: H_Hinge_L
+    400064: H_Hinge_R
+    400066: Hammer_L
+    400068: Hammer_L_end
+    400070: Hammer_R
+    400072: Hammer_R_end
+    400074: Hips
+    400076: //RootNode
+    400078: LegRoot_L
+    400080: LegRoot_R
+    400082: LegTarget_L
+    400084: LegTarget_L_end
+    400086: LegTarget_R
+    400088: LegTarget_R_end
+    400090: Piston1_L
+    400092: Piston1_L_end
+    400094: Piston1_R
+    400096: Piston1_R_end
+    400098: Piston1Target_L
+    400100: Piston1Target_L_end
+    400102: Piston1Target_R
+    400104: Piston1Target_R_end
+    400106: Piston2_L
+    400108: Piston2_L_end
+    400110: Piston2_R
+    400112: Piston2_R_end
+    400114: Piston2Target_L
+    400116: Piston2Target_L_end
+    400118: Piston2Target_R
+    400120: Piston2Target_R_end
+    400122: Piston3_L
+    400124: Piston3_L_end
+    400126: Piston3_R
+    400128: Piston3_R_end
+    400130: Piston3Target_L
+    400132: Piston3Target_L_end
+    400134: Piston3Target_R
+    400136: Piston3Target_R_end
+    400138: Piston4_L
+    400140: Piston4_L_end
+    400142: Piston4_R
+    400144: Piston4_R_end
+    400146: Piston4Target_L
+    400148: Piston4Target_L_end
+    400150: Piston4Target_R
+    400152: Piston4Target_R_end
+    400154: Shin_L
+    400156: Shin_R
+    400158: Thigh_L
+    400160: Thigh_R
+    400162: V_Hinge_L
+    400164: V_Hinge_L_end
+    400166: V_Hinge_R
+    400168: V_Hinge_R_end
+    400170: Valve1
+    400172: Valve1_end
+    400174: Valve2_L
+    400176: Valve2_L_end
+    400178: Valve2_R
+    400180: Valve2_R_end
+    400182: SteampunkRobot3_rig
+    7400000: SteampunkRobot3_rig|Idle
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: SteampunkRobot3_rig|Idle
+      takeName: SteampunkRobot3_rig|Idle
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: SteampunkRobot3_rig
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/Chest
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/Chest/Arm1_L
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/Chest/Arm1_L/Arm2_L
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/Chest/Arm1_L/Arm2_L/Hammer_L
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/Chest/Arm1_L/Arm2_L/Hammer_L/Hammer_L_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/Chest/Arm1_L/Gauge2_L
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/Chest/Arm1_L/Gauge2_L/Gauge2_L_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/Chest/Arm1_L/Valve2_L
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/Chest/Arm1_L/Valve2_L/Valve2_L_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/Chest/Arm1_R
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/Chest/Arm1_R/Arm2_R
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/Chest/Arm1_R/Arm2_R/Hammer_R
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/Chest/Arm1_R/Arm2_R/Hammer_R/Hammer_R_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/Chest/Arm1_R/Gauge2_R
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/Chest/Arm1_R/Gauge2_R/Gauge2_R_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/Chest/Arm1_R/Valve2_R
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/Chest/Arm1_R/Valve2_R/Valve2_R_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/Chest/Flywheel
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/Chest/Flywheel/Flywheel_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/Chest/Gauge1
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/Chest/Gauge1/Gauge1_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/Chest/Valve1
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/Chest/Valve1/Valve1_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_L
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_L/H_Hinge_L
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_L/H_Hinge_L/Thigh_L
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_L/H_Hinge_L/Thigh_L/Shin_L
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_L/H_Hinge_L/Thigh_L/Shin_L/Cill1_L
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_L/H_Hinge_L/Thigh_L/Shin_L/Cill1_L/Cill1_L_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_L/H_Hinge_L/Thigh_L/Shin_L/Cill2_L
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_L/H_Hinge_L/Thigh_L/Shin_L/Cill2_L/Cill2_L_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_L/H_Hinge_L/Thigh_L/Shin_L/Cill3_L
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_L/H_Hinge_L/Thigh_L/Shin_L/Cill3_L/Cill3_L_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_L/H_Hinge_L/Thigh_L/Shin_L/Cill4_L
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_L/H_Hinge_L/Thigh_L/Shin_L/Cill4_L/Cill4_L_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_L/H_Hinge_L/Thigh_L/Shin_L/Foot_L
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_L/H_Hinge_L/Thigh_L/Shin_L/Foot_L/Piston1_L
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_L/H_Hinge_L/Thigh_L/Shin_L/Foot_L/Piston1_L/Piston1_L_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_L/H_Hinge_L/Thigh_L/Shin_L/Foot_L/Piston2_L
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_L/H_Hinge_L/Thigh_L/Shin_L/Foot_L/Piston2_L/Piston2_L_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_L/H_Hinge_L/Thigh_L/Shin_L/Foot_L/Piston3_L
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_L/H_Hinge_L/Thigh_L/Shin_L/Foot_L/Piston3_L/Piston3_L_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_L/H_Hinge_L/Thigh_L/Shin_L/Foot_L/Piston4_L
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_L/H_Hinge_L/Thigh_L/Shin_L/Foot_L/Piston4_L/Piston4_L_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_L/V_Hinge_L
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_L/V_Hinge_L/V_Hinge_L_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_R
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_R/H_Hinge_R
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_R/H_Hinge_R/Thigh_R
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_R/H_Hinge_R/Thigh_R/Shin_R
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_R/H_Hinge_R/Thigh_R/Shin_R/Cill1_R
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_R/H_Hinge_R/Thigh_R/Shin_R/Cill1_R/Cill1_R_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_R/H_Hinge_R/Thigh_R/Shin_R/Cill2_R
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_R/H_Hinge_R/Thigh_R/Shin_R/Cill2_R/Cill2_R_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_R/H_Hinge_R/Thigh_R/Shin_R/Cill3_R
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_R/H_Hinge_R/Thigh_R/Shin_R/Cill3_R/Cill3_R_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_R/H_Hinge_R/Thigh_R/Shin_R/Cill4_R
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_R/H_Hinge_R/Thigh_R/Shin_R/Cill4_R/Cill4_R_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_R/H_Hinge_R/Thigh_R/Shin_R/Foot_R
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_R/H_Hinge_R/Thigh_R/Shin_R/Foot_R/Piston1_R
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_R/H_Hinge_R/Thigh_R/Shin_R/Foot_R/Piston1_R/Piston1_R_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_R/H_Hinge_R/Thigh_R/Shin_R/Foot_R/Piston2_R
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_R/H_Hinge_R/Thigh_R/Shin_R/Foot_R/Piston2_R/Piston2_R_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_R/H_Hinge_R/Thigh_R/Shin_R/Foot_R/Piston3_R
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_R/H_Hinge_R/Thigh_R/Shin_R/Foot_R/Piston3_R/Piston3_R_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_R/H_Hinge_R/Thigh_R/Shin_R/Foot_R/Piston4_R
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_R/H_Hinge_R/Thigh_R/Shin_R/Foot_R/Piston4_R/Piston4_R_end
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_R/V_Hinge_R
+        weight: 1
+      - path: SteampunkRobot3_rig/Hips/LegRoot_R/V_Hinge_R/V_Hinge_R_end
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 990429cc8d4569c43bac394e69519651,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
