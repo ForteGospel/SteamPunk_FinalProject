@@ -11,10 +11,11 @@ public abstract class enemyController : MonoBehaviour
     protected const string ANIM_MOVE = "speed";
     protected const string ANIM_ATTACK = "attack";
     protected const string ANIM_DIE = "die";
+    protected const string ANIM_HIT = "hit";
     protected Animator animator;
 
     [SerializeField]
-    protected floatScriptableObject health;
+    protected float health;
     protected GameObject player;
     [SerializeField]
     protected float attackRange;
@@ -39,6 +40,16 @@ public abstract class enemyController : MonoBehaviour
     [SerializeField]
     protected bool alreadyAttacked;
 
+    bool stutter = false;
+
+    protected bool isAlive = true;
+
+    [SerializeField]
+    GameObject spawnOnDeath;
+
+    [SerializeField]
+    AudioClip[] audioClips;
+
 
     protected void Start()
     {
@@ -49,12 +60,14 @@ public abstract class enemyController : MonoBehaviour
 
     protected void Update()
     {
-        
-        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
-        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
-        if (!playerInSightRange && !playerInAttackRange) Patroling();
-        if (playerInSightRange && !playerInAttackRange) ChasePlayer();
-        if (playerInAttackRange && playerInSightRange) AttackPlayer();
+        if (!stutter && isAlive)
+        {
+            playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
+            playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
+            if (!playerInSightRange && !playerInAttackRange) Patroling();
+            if (playerInSightRange && !playerInAttackRange) ChasePlayer();
+            if (playerInAttackRange && playerInSightRange) AttackPlayer();
+        }
     }
 
     protected virtual void Patroling()
@@ -65,10 +78,10 @@ public abstract class enemyController : MonoBehaviour
         if (walkPointSet)
             agent.SetDestination(walkPoint);
 
-        Vector3 distanceToWalkPoint = transform.position - new Vector3(walkPoint.x, walkPoint.y + agent.baseOffset, walkPoint.z);
+        Vector3 distanceToWalkPoint = transform.position - new Vector3(walkPoint.x, walkPoint.y , walkPoint.z);
 
         //Walkpoint reached
-        if (distanceToWalkPoint.magnitude < 1f || agent.pathStatus != NavMeshPathStatus.PathComplete)
+        if (distanceToWalkPoint.magnitude < 1f)
             walkPointSet = false;
     }
     protected virtual void SearchWalkPoint()
@@ -77,7 +90,7 @@ public abstract class enemyController : MonoBehaviour
         float randomZ = Random.Range(-walkPointRange, walkPointRange);
         float randomX = Random.Range(-walkPointRange, walkPointRange);
 
-        walkPoint = new Vector3(transform.position.x + randomX, transform.position.y -agent.baseOffset, transform.position.z + randomZ);
+        walkPoint = new Vector3(transform.position.x + randomX, transform.position.y , transform.position.z + randomZ);
 
         if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
             walkPointSet = true;
@@ -109,18 +122,42 @@ public abstract class enemyController : MonoBehaviour
         alreadyAttacked = false;
     }
 
-    protected void TakeDamage(int damage)
+    protected void ResetStutter()
     {
-        health.value -= damage;
+        stutter = false;
+    }
 
-        if (health.value <= 0)
+    virtual public void TakeDamage(Vector3 position)
+    {
+        if (isAlive)
         {
-            animator.SetTrigger(ANIM_DIE);
-            Invoke(nameof(DestroyEnemy), 1f);
+            health -= 1;
+            if (health <= 0)
+            {
+                isAlive = false;
+                DestroyEnemy();
+            }
+            else
+            {
+                stutter = true;
+                Debug.Log(health);
+                animator.SetTrigger(ANIM_HIT);
+                Invoke(nameof(ResetStutter), timeBetweenAttacks);
+            }
         }
     }
     protected void DestroyEnemy()
     {
+        animator.SetTrigger(ANIM_DIE);
+        if (spawnOnDeath != null)
+        {
+            Invoke(nameof(spawnObjectOnDeath), 2f);
+        }
+    }
+
+    protected void spawnObjectOnDeath()
+    {
+        Instantiate(spawnOnDeath, transform.position, transform.rotation);
         Destroy(gameObject);
     }
 

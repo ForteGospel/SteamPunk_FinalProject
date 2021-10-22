@@ -8,7 +8,8 @@ public class MeleeWeapon : MonoBehaviour
     public TimeEffect[] effects;
     public GameObject ParticleSystem;
 
-    public Vector3 center; 
+    public GameObject centerAttack;
+
     public Vector3 size;
 
     void Start()
@@ -24,6 +25,6 @@ public class MeleeWeapon : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireCube(center, size);
+        Gizmos.DrawWireCube(centerAttack.transform.position, size);
     }
 }

@@ -17,10 +17,10 @@ TagManager:
   - Tarrain
   - Player
   - Interactable
-  - 
-  - 
-  - 
-  - 
+  - NavMeshTerrain
+  - Enemy
+  - Building
+  - Tree
   - 
   - 
   - 

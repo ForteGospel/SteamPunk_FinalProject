@@ -7,6 +7,8 @@ public class EllenStaffEffect : StateMachineBehaviour
 {
     public int effectIndex;
 
+    public LayerMask whatIsEnemy;
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -16,7 +18,13 @@ public class EllenStaffEffect : StateMachineBehaviour
 
         ctrl.meleeWeapon.ParticleSystem.SetActive(true);
 
-        //int contacts = Physics.OverlapBoxNonAlloc(tra)
-    }
+        Collider[] results = new Collider [8];
 
+        int contacts = Physics.OverlapBoxNonAlloc(ctrl.meleeWeapon.centerAttack.transform.position, ctrl.meleeWeapon.size, results, ctrl.transform.rotation, whatIsEnemy);
+
+        for (int i = 0; i < contacts; ++i)
+        {
+            results[i].gameObject.GetComponent<enemyController>().TakeDamage(ctrl.transform.position);
+        }
+    }
 }
