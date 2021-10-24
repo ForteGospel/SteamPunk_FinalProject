@@ -2557,7 +2557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
-  attackRange: 1
+  attackRange: 3
   sightRange: 5
   whatIsPlayer:
     serializedVersion: 2
@@ -2566,9 +2566,10 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 2048
-  timeBetweenAttacks: 0
+  timeBetweenAttacks: 2.8
   alreadyAttacked: 0
-  spawnOnDeath: {fileID: 0}
+  spawnOnDeath: {fileID: 1528915638184230, guid: 45dbaae7298209141b611403aa926aac,
+    type: 3}
   audioClips: []
 --- !u!195 &1419547297
 NavMeshAgent:
@@ -2603,8 +2604,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.046
+  m_Center: {x: 0, y: 0.05, z: 0}
 --- !u!1 &1533244445735912
 GameObject:
   m_ObjectHideFlags: 0
