@@ -12,13 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad3fc814fb419544092b8dd27984deb9, type: 3}
   m_Name: MayorDialog
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: a62c26148d6a46d4a842fa9e70e05468, type: 3}
+  image: {fileID: 21300000, guid: 6c5f20fdd979f6540ba7b06eb2777a73, type: 3}
+  name: Mayor
   dialog:
-  - huh, so is that the machine you spoke of, Toymaker?
-  - I must admit it look... Impressive, your best creation yet indeed
-  - we all, well, most, I mean Some of us belive in you, no offance of coaurse, its
-    just with your age and day, we have our doubts, but you are our best chance of
-    claiming the Isle treasures.
-  - "I only hope it is enough to take on the dangers of Isles that the Nomads spoke
-    of, \u2018a single lightning from a tower struck the ship down\u2019, can\u2019t
-    imagine what other suprises are hidden there."
+  - Toymaker? is that you?
+  - I sure am glad you are here!
+  - Our town is under attack! and We need all help we can get!
+  - Everyone is hiding inside of their houses
+  - Go talk with the Blacksmith so he can give you something to defend yourself

@@ -146,6 +146,27 @@ public abstract class enemyController : MonoBehaviour
             }
         }
     }
+
+    virtual public void TakeRangeDamage()
+    {
+        if (isAlive)
+        {
+            health -= 0.25f;
+            if (health <= 0)
+            {
+                isAlive = false;
+                DestroyEnemy();
+            }
+            else
+            {
+                stutter = true;
+                Debug.Log(health);
+                animator.SetTrigger(ANIM_HIT);
+                Invoke(nameof(ResetStutter), timeBetweenAttacks);
+            }
+        }
+    }
+
     protected void DestroyEnemy()
     {
         animator.SetTrigger(ANIM_DIE);

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Animations.Rigging;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
 #endif
@@ -63,6 +64,12 @@ namespace StarterAssets
 		[Header("Attack Variables")]
 		public bool inAttack;
 		public MeleeWeapon meleeWeapon;
+		public GunWeapon gunWeapon;
+		public Rig gunRig;
+
+		private bool meeleeIsEnable = false;
+		private bool rangeIsEnable = false;
+		private bool wingsIsEnable = false;
 
 		[Header("Damage Variables")]
 		public float staggerTime = 1f;
@@ -153,10 +160,10 @@ namespace StarterAssets
 			_hasAnimator = TryGetComponent(out _animator);
 			_animator.SetFloat(_animIDStateTime, Mathf.Repeat(_animator.GetCurrentAnimatorStateInfo(0).normalizedTime, 1f));
 
-			if (wingsObject.activeInHierarchy)
+			if (wingsObject.activeInHierarchy || _input.attack2)
             {
 				if (playerSteam.value >= 0f)
-					playerSteam.value -= (steamRechargeSpeed / 2) * Time.deltaTime;
+					playerSteam.value -= steamRechargeSpeed * Time.deltaTime;
 				else
 					wingsObject.SetActive(false);
 
@@ -175,14 +182,14 @@ namespace StarterAssets
 
 				if (!inAttack)
 				{
-
+					RangeAttack();
 					JumpAndGravity();
 					Move();
 				}
 			}
 		}
 
-        
+
 
         private void LateUpdate()
 		{
@@ -349,7 +356,7 @@ namespace StarterAssets
 					{
 						_animator.SetBool(_animIDFreeFall, true);
 					}
-					if (_input.jump)
+					if (_input.jump && wingsIsEnable)
 					{
 						wingsObject.SetActive(!wingsObject.activeSelf);
 					}
@@ -381,7 +388,7 @@ namespace StarterAssets
 
 		private void AimAttack()
         {
-			if (_input.attack && playerSteam.value > 15f && Grounded)
+			if (_input.attack && playerSteam.value > 15f && Grounded && meeleeIsEnable)
             {
 				_animator.SetTrigger(_animIDAttack);
 				_input.attack = false;
@@ -389,6 +396,42 @@ namespace StarterAssets
 				playerSteam.value -= 15f;
 			}
         }
+
+		private void RangeAttack()
+		{
+			if (_input.attack2 && playerSteam.value > 15f && rangeIsEnable)
+            {
+				gunRig.weight += Time.deltaTime * 5f;
+				if (gunRig.weight >= 1f)
+                {
+					gunWeapon.fireGun();
+				}
+					
+            }
+			else
+            {
+				gunRig.weight -= Time.deltaTime * 10f;
+				gunWeapon.holdGun();
+			}
+		}
+
+		public void enableMelee()
+        {
+			meeleeIsEnable = true;
+			meleeWeapon.gameObject.SetActive(true);
+        }
+
+		public void enableRange()
+		{
+			rangeIsEnable = true;
+			gunWeapon.gameObject.SetActive(true);
+		}
+
+		public void enableWings()
+		{
+			wingsIsEnable = true;
+			wingsObject.gameObject.SetActive(true);
+		}
 
 		private void ActivateObject()
 		{
@@ -400,7 +443,8 @@ namespace StarterAssets
 				
 				Debug.Log(collider.Length);
 				if (collider.Length > 0)
-					collider[0].transform.GetComponent<IInteractable>().Interact();
+					foreach (IInteractable interactable in collider[0].transform.GetComponents<IInteractable>())
+						interactable.Interact();
 
 			}
 		}

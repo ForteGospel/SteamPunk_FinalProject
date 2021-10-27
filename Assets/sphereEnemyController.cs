@@ -26,7 +26,8 @@ public class sphereEnemyController : enemyController
     {
         if (whatToCollideWith == (whatToCollideWith | (1 << collision.gameObject.layer)))
         {
-            Debug.Log("hit");
+            if (collision.transform.TryGetComponent<bigBossEnemy>(out bigBossEnemy enemy))
+                enemy.realDamage();
         }
     }
 }
