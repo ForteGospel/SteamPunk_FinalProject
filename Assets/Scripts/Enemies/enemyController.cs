@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(Animator))]
-public abstract class enemyController : MonoBehaviour 
+public abstract class enemyController : MonoBehaviour, IDamagable
 {
     //Animator
     protected const string ANIM_MOVE = "speed";
@@ -39,6 +39,12 @@ public abstract class enemyController : MonoBehaviour
     protected float timeBetweenAttacks;
     [SerializeField]
     protected bool alreadyAttacked;
+    [SerializeField]
+    protected GameObject centerAttack;
+    [SerializeField]
+    protected Vector3 size;
+    [SerializeField]
+    protected float hitDamage;
 
     bool stutter = false;
 
@@ -188,7 +194,7 @@ public abstract class enemyController : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, attackRange);
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, sightRange);
-
+        Gizmos.DrawWireCube(centerAttack.transform.position, size);
         Gizmos.DrawWireCube(walkPoint, Vector3.one * 3);
     }
 }

@@ -118,6 +118,8 @@ namespace StarterAssets
 		private int _animIDMotionSpeed;
 		private int _animIDAttack;
 		private int _animIDStateTime;
+		private int _animIDHit;
+		private int _animIDDeath;
 
 		private Animator _animator;
 		private CharacterController _controller;
@@ -205,6 +207,8 @@ namespace StarterAssets
 			_animIDMotionSpeed = Animator.StringToHash("MotionSpeed");
 			_animIDStateTime = Animator.StringToHash("StateTime");
 			_animIDAttack = Animator.StringToHash("MeleeAttack");
+			_animIDHit = Animator.StringToHash("Hit");
+			_animIDDeath = Animator.StringToHash("Death");
 		}
 
 		private void GroundedCheck()
@@ -453,6 +457,7 @@ namespace StarterAssets
         {
 			if (canGetHit)
             {
+				_animator.SetTrigger(_animIDHit);
 				playerHealth.value -= damage;
 
 				if (playerHealth.value < 0f)

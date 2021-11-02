@@ -26,7 +26,7 @@ public class EllenStaffEffect : StateMachineBehaviour
 
         for (int i = 0; i < contacts; ++i)
         {
-            results[i].gameObject.GetComponent<enemyController>().TakeDamage(ctrl.transform.position);
+            results[i].gameObject.GetComponent<IDamagable>().TakeDamage(ctrl.transform.position);
         }
 
         contacts = Physics.OverlapBoxNonAlloc(ctrl.meleeWeapon.centerAttack.transform.position, ctrl.meleeWeapon.size, results, ctrl.transform.rotation, whatIsRocket);

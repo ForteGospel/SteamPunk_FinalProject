@@ -632,6 +632,9 @@ MonoBehaviour:
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 4096
+  whatIsRocket:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1101 &1381778882725410896
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -795,6 +798,9 @@ MonoBehaviour:
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 4096
+  whatIsRocket:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1102 &3987259457594981421
 AnimatorState:
   serializedVersion: 5
@@ -840,6 +846,9 @@ MonoBehaviour:
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 4096
+  whatIsRocket:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1107 &4037440703929390324
 AnimatorStateMachine:
   serializedVersion: 5
@@ -899,6 +908,9 @@ MonoBehaviour:
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 4096
+  whatIsRocket:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1101 &5185278855704465556
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

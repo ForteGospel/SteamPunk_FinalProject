@@ -9,7 +9,7 @@ public class particleTrigger : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
-        if (other.TryGetComponent<enemyController>(out enemyController ec))
+        if (other.TryGetComponent<IDamagable>(out IDamagable ec))
         {
             ec.TakeRangeDamage();
         }
