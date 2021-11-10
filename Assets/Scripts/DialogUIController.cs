@@ -19,6 +19,9 @@ public class DialogUIController : MonoBehaviour
     [SerializeField]
     GameObject panel;
 
+    [SerializeField]
+    Text nameText;
+
     DialogObjects currentDialog;
 
     float secondsForTempUI = 0;
@@ -72,6 +75,8 @@ public class DialogUIController : MonoBehaviour
             image.sprite = currentDialog.image;
 
             UIText.text = currentDialog.dialog[currentTextLineNumber];
+
+            nameText.text = currentDialog.name;
 
             currentTextLineNumber++;
         }

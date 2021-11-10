@@ -13,12 +13,16 @@ public class rangedEnemyController : enemyController
     [SerializeField]
     float projectileForce = 100f;
 
+    [SerializeField]
+    GameObject effect;
+
     protected override void AttackPlayer()
     {
-
+        effect.SetActive(true);
         if (!alreadyAttacked)
         {
             GameObject newProjectile = Instantiate(projectile, shottingPosition.position, shottingPosition.rotation);
+            newProjectile.GetComponent<rocketController>().currDestination = gameObject;
             newProjectile.GetComponent<Rigidbody>().AddForce(transform.forward * projectileForce);
 
             try
@@ -30,5 +34,11 @@ public class rangedEnemyController : enemyController
         }
         
         base.AttackPlayer();        
+    }
+
+    protected override void ChasePlayer()
+    {
+        effect.SetActive(false);
+        base.ChasePlayer();
     }
 }

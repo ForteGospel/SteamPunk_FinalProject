@@ -8,5 +8,7 @@ public class DialogObjects : ScriptableObject
 {
     public Sprite image;
 
+    public string name;
+
     public string[] dialog;
 }

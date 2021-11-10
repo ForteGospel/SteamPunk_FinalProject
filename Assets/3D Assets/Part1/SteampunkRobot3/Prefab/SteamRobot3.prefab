@@ -2174,9 +2174,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4554638741148988}
   - component: {fileID: 95145016071390244}
-  - component: {fileID: 1102501636}
   - component: {fileID: 1102501637}
-  m_Layer: 0
+  - component: {fileID: 1784398601}
+  - component: {fileID: 1784398602}
+  m_Layer: 12
   m_Name: SteamRobot3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2196,6 +2197,7 @@ Transform:
   m_Children:
   - {fileID: 4969811097073250}
   - {fileID: 4859262778192738}
+  - {fileID: 4154005190183518181}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2218,32 +2220,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1102501636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1717547032283086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b477fecc0ec0424da1d3f5fbc1be5c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  attackRange: 5
-  sightRange: 10
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 512
-  walkPoint: {x: 0, y: 0, z: 0}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 256
-  timeBetweenAttacks: 0
-  alreadyAttacked: 0
-  spawnOnDeath: {fileID: 0}
-  audioClips: []
 --- !u!195 &1102501637
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2254,7 +2230,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 3
-  m_Speed: 3.5
+  m_Speed: 1.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -2266,6 +2242,54 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!136 &1784398601
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717547032283086}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.55
+  m_Height: 6
+  m_Direction: 1
+  m_Center: {x: 0, y: 3.5, z: 0}
+--- !u!114 &1784398602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717547032283086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eef0f098f7d20784d92ebf19f133684f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+  attackRange: 5
+  sightRange: 20
+  whatIsPlayer:
+    serializedVersion: 2
+    m_Bits: 512
+  walkPoint: {x: 0, y: 0, z: 0}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 2048
+  timeBetweenAttacks: 2
+  alreadyAttacked: 0
+  centerAttack: {fileID: 4757934471587203006}
+  size: {x: 5, y: 3, z: 4}
+  hitDamage: 0
+  spawnOnDeath: {fileID: 0}
+  audioClips: []
+  dialogs:
+  - {fileID: 11400000, guid: 0f5e88da79cf0b543adf47fb55acf070, type: 2}
+  - {fileID: 11400000, guid: b8636f6cadefc094fbaf8457a528cd17, type: 2}
+  - {fileID: 11400000, guid: 2e14eeb6e38353c498cbfb2c75f24a7d, type: 2}
+  - {fileID: 11400000, guid: 4580ded06cbc79a4eac397f8c79f77cf, type: 2}
 --- !u!1 &1720456657064104
 GameObject:
   m_ObjectHideFlags: 0
@@ -3061,6 +3085,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4635636098819582}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4757934471587203006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4154005190183518181}
+  m_Layer: 0
+  m_Name: centerAttack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4154005190183518181
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4757934471587203006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2, z: 2.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4554638741148988}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1042709507797630447
 PrefabInstance:

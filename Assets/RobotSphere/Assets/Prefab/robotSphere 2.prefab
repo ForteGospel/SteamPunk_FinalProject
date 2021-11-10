@@ -2608,24 +2608,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91c6b236c343dc9429d630b8de5c148c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  attackRange: 0
-  sightRange: 0
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 0
-  walkPoint: {x: 0, y: 0, z: 0}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 0
-  timeBetweenAttacks: 0
-  alreadyAttacked: 0
-  spawnOnDeath: {fileID: 0}
-  audioClips: []
   force: 10
   whatToCollideWith:
     serializedVersion: 2
     m_Bits: 28672
+  explossionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
 --- !u!1 &1533244445735912
 GameObject:
   m_ObjectHideFlags: 0

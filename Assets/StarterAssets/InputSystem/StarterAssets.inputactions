@@ -52,6 +52,14 @@
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Attack2",
+                    "type": "PassThrough",
+                    "id": "69ff3227-c32b-4e37-829c-0295e8398688",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -250,6 +258,17 @@
                     "processors": "",
                     "groups": "KeyboardMouse",
                     "action": "Activate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "921a48fb-180f-46fd-a446-7dd7131193f6",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "Attack2",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
