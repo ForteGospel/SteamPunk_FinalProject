@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad3fc814fb419544092b8dd27984deb9, type: 3}
-  m_Name: Librarian
+  m_Name: BossIncoming
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 7c79bb9f336a7264e8454795d1c921d6, type: 3}
-  name: Librarian
+  image: {fileID: 21300000, guid: c703f3b94feed9f4882f3461bbb0a2fa, type: 3}
+  name: ToyMaker
   dialog:
-  - We can talk Later Toymaker!
-  - Help us!
+  - Watchout Kyle! Incoming Big One!

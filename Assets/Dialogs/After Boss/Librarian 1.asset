@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad3fc814fb419544092b8dd27984deb9, type: 3}
+  m_Name: Librarian 1
+  m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: 39244c43b21896f4da920ff96bd2b2e9, type: 3}
+  name: Librarian
+  dialog:
+  - "ah! the Toymaker\u2019s creation! or is it you there Toymaker? I never understood
+    how your technology works\u2026"
+  - "Anyway, we are all in your depth for coming here today. if not for your we might
+    have fallen to the vortex below\u2026 "
+  - but what is it that you came for? Would you like to hear about the long-forgotten
+    past before the world was shattered?
+  - ha! of course, you would want to!
+  - 'so as you know, hundreds of years Before the world has shattered, A Grand Inventor
+    Invented The Howlin Reactor. '
+  - "The First and the Most Powerful \u201CThe Infinite Magnetic Engine\u201D, a
+    powerful Device that generates Power endlessly and increases into power creation
+    indefinitely! some say it could have even torn reality apart if it was not under
+    supervision, or if it fell in the wrong hands. "
+  - the legend says that it is so powerful, that one could hear as power howls from
+    within, raging to be unleashed to its true potential.
+  - 'With this creation, The First Flying City of "Frostmoon" was created. years
+    past and The city created thousands of flying cities, such as our little town. '
+  - but a mysterious Grand Disaster struck and the City of Frostmoon has vanished
+    together with the blueprints and plans of how to Create The Reactors that kept
+    the flying cities and towns afloat without the fear of the Gravitational Holes.
+  - The tale is that The Grand Inventor created a Secret hidden flying Isle, The
+    Clockwork Isles, where he hid the Last known existing Reactor before Frostmoon
+    vanished.
+  - 'I believe that the Nomads that arrived in our town have indeed found those Isles,
+    I suggest you talk to them, try to learn what they have to say before you venture
+    out. '
+  - farewell Toymaker, stay safe, and come back soon!

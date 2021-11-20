@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad3fc814fb419544092b8dd27984deb9, type: 3}
-  m_Name: BlacksmithDialog 1
+  m_Name: GunsmithDialog
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: ca0a2bd66fab12141b005d009b0e0b27, type: 3}
-  name: Blacksmith
+  image: {fileID: 21300000, guid: 0e6908472b2423f47b5d379c896577d7, type: 3}
+  name: Gunsmith
   dialog:
-  - Toymaker?! Is that you?!
-  - No matter now!
-  - Fast grab that Sword and fight with the LEFT CLICK
-  - We need to fight those Robots off before we all fall of the skies!
+  - Those Robots destroying our Town, AND MY SMITH!
+  - Let's see how precise your creation really is, here grab this gun and stop those
+    Robots Toymaker!

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad3fc814fb419544092b8dd27984deb9, type: 3}
   m_Name: librarianBoss
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 7c79bb9f336a7264e8454795d1c921d6, type: 3}
+  image: {fileID: 21300000, guid: 39244c43b21896f4da920ff96bd2b2e9, type: 3}
   name: Librarian
   dialog:
   - You are not doing damage, let me check my books!

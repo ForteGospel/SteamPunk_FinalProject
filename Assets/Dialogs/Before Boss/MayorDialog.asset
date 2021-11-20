@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad3fc814fb419544092b8dd27984deb9, type: 3}
   m_Name: MayorDialog
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 6c5f20fdd979f6540ba7b06eb2777a73, type: 3}
+  image: {fileID: 21300000, guid: 851d3037cfb9e224799f87e8f6213516, type: 3}
   name: Mayor
   dialog:
-  - Toymaker? is that you?
+  - Toymaker? Is that you?
   - I sure am glad you are here!
   - Our town is under attack! and We need all help we can get!
   - Everyone is hiding inside of their houses

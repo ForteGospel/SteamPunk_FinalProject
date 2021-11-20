@@ -10,13 +10,14 @@ public class ObjectActivator : MonoBehaviour, IInteractable
 
     [SerializeField]
     UnityEvent unityEvent;
+
+    [SerializeField]
+    bool isLoot;
     public void Interact()
     {
-        //Debug.Log("interacted");
-        //foreach (GameObject activable in activablesObjects)
-        //    activable.GetComponent<IActivable>().Activate();
-
         unityEvent.Invoke();
-    }
 
+        if (isLoot)
+            Destroy(gameObject);
+    }
 }

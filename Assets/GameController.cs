@@ -9,6 +9,7 @@ public class GameController : MonoBehaviour
 
     [SerializeField]
     floatScriptableObject health;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,14 +21,14 @@ public class GameController : MonoBehaviour
     {
         if (health.value <= 0f)
         {
-            //PauseGameController.instance.pauseGame();
-            gameOverUI.SetActive(true);
-            Invoke(nameof(restartLevel), 5f);
+            Invoke(nameof(showGameOver), 2f);
         }
     }
 
-    private void restartLevel()
+    private void showGameOver()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
+        gameOverUI.SetActive(true);
     }
 }

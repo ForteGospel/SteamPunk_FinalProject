@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: ed0f8f5ce2c5a34429df2ab82fece561
+  - enabled: 1
     path: Assets/Scenes/Sarit's Playing ground.unity
     guid: 4aa03997c07872949b1dc69f33b567fb
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: f0315e56fb70b244187e018b25e1c410
   m_configObjects: {}

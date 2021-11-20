@@ -181,6 +181,7 @@ namespace StarterAssets
             {
 				AimAttack();
 				ActivateObject();
+				isPlayerDead();
 
 				if (!inAttack)
 				{
@@ -191,7 +192,14 @@ namespace StarterAssets
 			}
 		}
 
-
+        private void isPlayerDead()
+        {
+			if (playerHealth.value <= 0)
+            {
+				_animator.SetTrigger(_animIDDeath);
+				inAttack = true;
+			}
+        }
 
         private void LateUpdate()
 		{

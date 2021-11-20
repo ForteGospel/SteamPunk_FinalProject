@@ -9,6 +9,16 @@ public class rocketController : MonoBehaviour
 
     public GameObject currDestination;
 
+    float TTL = 0;
+
+    private void Update()
+    {
+        TTL += Time.deltaTime;
+
+        if (TTL > 10f)
+            Destroy(gameObject);
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (whatToCollideWith == (whatToCollideWith | (1 << collision.gameObject.layer)))

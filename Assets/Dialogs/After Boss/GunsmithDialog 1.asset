@@ -10,11 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad3fc814fb419544092b8dd27984deb9, type: 3}
-  m_Name: GunsmithDialog
+  m_Name: GunsmithDialog 1
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 0e6908472b2423f47b5d379c896577d7, type: 3}
   name: Gunsmith
   dialog:
-  - my Smith is in ruins!
-  - here take my gun but remember to give it back
-  - Shoot with the RIGHT CLICK and stop those Robots Toymaker!
+  - "The mayor told me you will be coming here, didn\u2019t know what to expect from
+    our old Toymaker\u2026"
+  - "I\u2019m dearly sorry, toymaker, but I can not help you, my smith is in ruin,,
+    and I can not provide your robot with a firearm, but you may keep the gun."
+  - Maybe someday in the future, I could craft you something more, until then, I
+    bid you farewell and good luck on your journey.

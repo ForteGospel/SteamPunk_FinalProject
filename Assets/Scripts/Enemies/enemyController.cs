@@ -87,7 +87,7 @@ public abstract class enemyController : MonoBehaviour, IDamagable
         Vector3 distanceToWalkPoint = transform.position - new Vector3(walkPoint.x, walkPoint.y , walkPoint.z);
 
         //Walkpoint reached
-        if (distanceToWalkPoint.magnitude < 1f)
+        if (distanceToWalkPoint.magnitude < 1.5f)
             walkPointSet = false;
     }
     protected virtual void SearchWalkPoint()
@@ -178,11 +178,11 @@ public abstract class enemyController : MonoBehaviour, IDamagable
         animator.SetTrigger(ANIM_DIE);
         if (spawnOnDeath != null)
         {
-            Invoke(nameof(spawnObjectOnDeath), 2f);
+            Invoke(nameof(spawnObjectOnDeath), 1f);
         }
     }
 
-    protected void spawnObjectOnDeath()
+    virtual protected void spawnObjectOnDeath()
     {
         Instantiate(spawnOnDeath, transform.position, transform.rotation);
         Destroy(gameObject);
